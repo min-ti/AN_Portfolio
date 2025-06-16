@@ -1,118 +1,110 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
+/* Base Styles */
 body {
-  background: #f7f9fc;
-  color: #222;
-  line-height: 1.6;
-  padding: 20px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
 }
 
-header {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #0a192f;
-  color: #fff;
+header, main, footer {
+  padding: 1rem 2rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+h1, h2, h3 {
+  color: #66ffcc;
+  text-shadow: 0 0 5px #00ffe7, 0 0 10px #007f7f;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 1rem;
+  color: #66ffcc;
   text-decoration: none;
-  color: #64ffda;
-  font-weight: 600;
+  font-weight: bold;
+  transition: text-shadow 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-section {
-  margin-bottom: 60px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #0a192f;
-  border-bottom: 2px solid #64ffda;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.project, .skills span {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills span {
-  padding: 8px 12px;
-  background: #e0f7fa;
-  font-size: 0.9rem;
-  font-weight: 500;
+  text-shadow: 0 0 10px #00ffe7;
 }
 
 .button {
-  display: inline-block;
-  background: #64ffda;
-  color: #0a192f;
+  background-color: #001f1f;
+  border: 1px solid #00ffe7;
+  color: #66ffcc;
   padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
 }
 
 .button:hover {
-  background: #52e0c4;
+  background-color: #00ffe7;
+  color: #0a0a0a;
+  box-shadow: 0 0 18px #00ffe7, 0 0 28px #66ffcc;
+}
+
+.skills span {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin: 5px;
+  display: inline-block;
+  box-shadow: 0 0 6px rgba(102, 255, 204, 0.2);
+  transition: transform 0.2s;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(102, 255, 204, 0.5);
 }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 40px;
-  padding: 20px;
-  background: #0a192f;
-  color: #fff;
+  padding-bottom: 2rem;
+  color: #888;
 }
 
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
+footer a {
+  color: #66ffcc;
+  text-decoration: none;
+}
 
-  .skills {
-    flex-direction: column;
-  }
+footer a:hover {
+  text-shadow: 0 0 10px #00ffe7;
+}
+
+/* AOS Animation Defaults */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+
+/* Pixel-style shimmer background (optional on project pages) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.01) 3px, rgba(255,255,255,0.01) 4px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.05;
+  animation: scrollGlow 20s linear infinite;
+}
+
+@keyframes scrollGlow {
+  from { background-position: 0 0; }
+  to { background-position: 0 100%; }
 }
