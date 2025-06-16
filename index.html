@@ -20,6 +20,7 @@
     }
     .intro {
       text-align: center;
+      z-index: 2;
       animation: fadeIn 1.5s ease;
     }
     .intro h1 {
@@ -36,18 +37,14 @@
       color: #e0e0e0;
       font-weight: 600;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
     .nav-link {
-      display: block;
+      display: inline-block;
       margin-top: 2rem;
       color: #ffffff;
       text-decoration: none;
       font-size: 1rem;
       border: 1px solid #888;
-      padding: 10px 20px;
+      padding: 10px 24px;
       border-radius: 8px;
       transition: all 0.3s;
     }
@@ -55,9 +52,35 @@
       background-color: #ffffff;
       color: #000;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      background: radial-gradient(#111111, #000000);
+    }
+    .pixel-shimmer {
+      content: "";
+      position: absolute;
+      width: 100%; height: 100%;
+      background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.01) 3px, rgba(255,255,255,0.01) 4px);
+      animation: scrollGlow 20s linear infinite;
+      opacity: 0.05;
+    }
+    @keyframes scrollGlow {
+      from { background-position: 0 0; }
+      to { background-position: 0 100%; }
+    }
   </style>
 </head>
 <body>
+  <div class="background">
+    <div class="pixel-shimmer"></div>
+  </div>
   <div class="intro">
     <h1>Hello, I'm <span class="highlight">Akhilesh Narotra</span></h1>
     <h2>QA Analyst • UI/UX Designer • Energy Technologist</h2>
