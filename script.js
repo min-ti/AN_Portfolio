@@ -1,13 +1,4 @@
-// Typewriter loader
-const text = "loading terminal:_  ";
-let i = 0;
-const el = document.getElementById("loader");
-function type() {
-  el.textContent = text.slice(0, i % (text.length + 1));
-  i++;
-  setTimeout(type, 100);
-}
-type();
+
 
 // Click sound
 const button = document.getElementById("view-work-btn");
