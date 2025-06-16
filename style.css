@@ -6,12 +6,6 @@ body {
   padding: 0;
 }
 
-#loader {
-  font-family: monospace;
-  color: #39ff14;
-  font-size: 1rem;
-  padding: 1rem;
-}
 
 header {
   display: flex;
