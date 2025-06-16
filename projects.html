@@ -5,66 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Akhilesh Narotra</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Share Tech Mono', monospace;
-      background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
-      color: #f1f1f1;
-      overflow-x: hidden;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Orbitron', sans-serif;
+      padding: 2rem;
     }
     h1 {
       text-align: center;
       font-size: 2.5rem;
       color: #66ffcc;
-      margin-top: 2rem;
-      animation: glitch 1.5s infinite;
-    }
-    @keyframes glitch {
-      0% { text-shadow: 2px 2px #ff00c8, -2px -2px #00ffe7; }
-      50% { text-shadow: -2px 2px #ff00c8, 2px -2px #00ffe7; }
-      100% { text-shadow: 2px -2px #ff00c8, -2px 2px #00ffe7; }
+      margin-bottom: 2rem;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
-      padding: 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
     .card {
       background: #121212;
-      border: 1px solid #333;
+      border: 1px solid #00ffe7;
       padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 255, 170, 0.1);
+      border-radius: 10px;
       transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px rgba(102, 255, 204, 0.2);
+      cursor: pointer;
     }
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(102, 255, 204, 0.5);
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px rgba(102, 255, 204, 0.6);
     }
     .card h2 {
+      font-size: 1.2rem;
       color: #66ffcc;
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
     .card ul {
       padding-left: 1.2rem;
-      list-style: square;
-      color: #e0e0e0;
+      color: #ccc;
+      font-size: 0.95rem;
     }
-    a.back {
+    .back {
       display: block;
+      margin: 3rem auto 0;
       text-align: center;
-      margin-top: 2rem;
-      font-size: 1.2rem;
       color: #66ffcc;
       text-decoration: none;
+      font-weight: bold;
     }
-    a.back:hover {
+    .back:hover {
       text-shadow: 0 0 10px #66ffcc;
     }
   </style>
@@ -74,15 +68,57 @@
   <div class="grid">
 
     <div class="card">
-      <h2>Software Testing – Web Banking App 💻</h2>
+      <h2>Web Banking QA Project 💻</h2>
       <ul>
-        <li>Executed 50+ test cases for core banking functionalities</li>
-        <li>Automated scenarios using Selenium WebDriver</li>
-        <li>Tracked and resolved 40+ defects via JIRA</li>
+        <li>Executed 50+ test cases for a complex banking system</li>
+        <li>Automated UI scenarios using Selenium WebDriver</li>
+        <li>Logged and resolved 40+ critical issues via JIRA</li>
         <li>Performed regression and smoke testing</li>
-        <li>Compiled test plans and detailed coverage reports</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>UX Redesign – Student Portal 🎨</h2>
+      <h2>Student Portal UX Redesign 🎨</h2>
+      <ul>
+        <li>Reimagined navigation and layout of student portal</li>
+        <li>Designed wireframes and prototypes using Figma</li>
+        <li>Improved accessibility and responsiveness</li>
+        <li>Conducted usability testing for clarity</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Meditation App – Mobile Prototype 🧘‍♂️</h2>
+      <ul>
+        <li>Created a calming multi-screen mobile interface</li>
+        <li>Integrated features: guided meditation, habit tracker</li>
+        <li>Used soft UI and color psychology for UX comfort</li>
+        <li>Validated with A/B tests and feedback loops</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Energy Audit – Viscount Alexander ⚡</h2>
+      <ul>
+        <li>Performed RETScreen-based baseline analysis</li>
+        <li>Proposed upgrades to HVAC & lighting: 10.9% savings</li>
+        <li>Financial modeling: 4.4-year payback, 54.3% IRR</li>
+        <li>Prepared formal recommendations for the board</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Solar & Battery Design – Isla Mocha 🔋</h2>
+      <ul>
+        <li>Engineered a 50kW solar PV system with Li-ion storage</li>
+        <li>Reduced diesel dependence through off-grid design</li>
+        <li>Calculated 7.2-year ROI and major emission cuts</li>
+        <li>Engaged local stakeholders for implementation</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <a class="back" href="index.html">← Back to Home</a>
+</body>
+</html>
