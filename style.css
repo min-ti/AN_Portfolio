@@ -1,110 +1,74 @@
-/* Base Styles */
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
   background-color: #0a0a0a;
-  color: #f0f0f0;
-  scroll-behavior: smooth;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header, main, footer {
+#loader {
+  font-family: monospace;
+  color: #39ff14;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
+  background-color: transparent;
 }
 
-h1, h2, h3 {
-  color: #66ffcc;
-  text-shadow: 0 0 5px #00ffe7, 0 0 10px #007f7f;
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ff00ff;
 }
 
 nav a {
+  color: #ccc;
   margin: 0 1rem;
-  color: #66ffcc;
   text-decoration: none;
-  font-weight: bold;
-  transition: text-shadow 0.3s;
+  position: relative;
 }
 
 nav a:hover {
-  text-shadow: 0 0 10px #00ffe7;
+  color: #fff;
 }
 
-.button {
-  background-color: #001f1f;
-  border: 1px solid #00ffe7;
-  color: #66ffcc;
-  padding: 10px 20px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
-}
-
-.button:hover {
-  background-color: #00ffe7;
-  color: #0a0a0a;
-  box-shadow: 0 0 18px #00ffe7, 0 0 28px #66ffcc;
-}
-
-.skills span {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 5px;
-  padding: 6px 10px;
-  margin: 5px;
-  display: inline-block;
-  box-shadow: 0 0 6px rgba(102, 255, 204, 0.2);
-  transition: transform 0.2s;
-}
-
-.skills span:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 12px rgba(102, 255, 204, 0.5);
-}
-
-footer {
+#hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 0.9rem;
-  padding-bottom: 2rem;
-  color: #888;
 }
 
-footer a {
-  color: #66ffcc;
-  text-decoration: none;
+.character-scene img {
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
-footer a:hover {
-  text-shadow: 0 0 10px #00ffe7;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-/* AOS Animation Defaults */
-[data-aos] {
-  opacity: 0;
-  transition-property: transform, opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
+#view-work-btn {
+  background: transparent;
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  padding: 10px 20px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-[data-aos].aos-animate {
-  opacity: 1;
-  transform: none;
-}
-
-/* Pixel-style shimmer background (optional on project pages) */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.01) 3px, rgba(255,255,255,0.01) 4px);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.05;
-  animation: scrollGlow 20s linear infinite;
-}
-
-@keyframes scrollGlow {
-  from { background-position: 0 0; }
-  to { background-position: 0 100%; }
+#view-work-btn:hover {
+  background: #39ff14;
+  color: #000;
 }
