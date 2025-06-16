@@ -5,68 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akhilesh Narotra | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle, #0d0d0d 0%, #050505 100%);
+      color: #f1f1f1;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #66ffcc;
+      text-shadow: 0 0 12px #00ffe7;
+      letter-spacing: 1px;
+    }
+    header p {
+      color: #aaa;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #66ffcc;
+      font-weight: bold;
+      transition: text-shadow 0.3s;
+    }
+    nav a:hover {
+      text-shadow: 0 0 8px #00ffe7;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('https://i.ibb.co/K6k13CD/cyber-bg.png') center/cover no-repeat;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #ffffff;
+      text-shadow: 0 0 8px #00ffe7;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #66ffcc;
+      border-bottom: 2px solid #00ffe7;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: transparent;
+      color: #66ffcc;
+      border: 1px solid #00ffe7;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background-color: #00ffe7;
+      color: #000;
+      box-shadow: 0 0 15px #66ffcc;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 3rem 2rem;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+    footer a {
+      color: #66ffcc;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-shadow: 0 0 10px #00ffe7;
+    }
+  </style>
 </head>
 <body>
   <header data-aos="fade-down">
     <h1>Akhilesh Narotra</h1>
-    <p>Technical Support • QA Analyst • Web Systems</p>
+    <p>Exploring the digital world through QA, design, and energy.</p>
     <nav>
       <a href="#about">About</a>
       <a href="projects.html">Projects</a>
-      <a href="#skills">Skills</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>Hello! I'm Akhilesh — a curious, detail-driven tech enthusiast passionate about solving problems and creating meaningful digital experiences. With a background in both energy management and software testing, I thrive at the intersection of technology, sustainability, and usability. I love turning complex challenges into simple, human-centered solutions — whether it's debugging a web app or designing a cleaner interface. When I'm not working with code or RETScreen models, you'll find me exploring art, spirituality, and cooking something experimental in the kitchen. My goal? To keep learning, growing, and making things that matter.</p>
-      <p>
-        <a class="button" href="https://www.linkedin.com/in/akhilesh-narotra-30b567290/" target="_blank">
-          View My LinkedIn Profile
-        </a>
-      </p>
-    </section>
+  <section class="hero" data-aos="fade-up">
+    <h2>Welcome to my digital playground.</h2>
+    <p>I’m a tech explorer who blends software testing, UI/UX design, and energy innovation. My goal is to make systems smarter and user experiences smoother. Let’s connect.</p>
+  </section>
 
-    <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Selenium</span>
-        <span>JIRA</span>
-        <span>Power BI</span>
-        <span>SQL</span>
-        <span>VirtualBox</span>
-        <span>Windows OS</span>
-        <span>Web Applications</span>
-        <span>Figma</span>
-        <span>Customer Support</span>
-      </div>
-    </section>
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Hello! I’m Akhilesh — passionate about technology, software quality, and meaningful design. My background in Energy Management and Software QA gives me a unique lens for solving real-world problems with both precision and creativity.</p>
+    <p>I enjoy crafting efficient systems, spotting bugs before they reach users, and building visuals that speak to human intuition. When I’m not debugging or designing, I’m either exploring anime worlds, practicing spirituality, or experimenting in the kitchen.</p>
+    <p><a class="button" href="https://www.linkedin.com/in/akhilesh-narotra-30b567290/" target="_blank">Connect on LinkedIn</a></p>
+  </section>
 
-    <section id="resume" data-aos="fade-up">
-      <h2>Resume</h2>
-      <p>Download my full resume here:</p>
-      <a class="button" href="Akhilesh_Narotra_Resume.pdf" download>Download Resume (PDF)</a>
-    </section>
+  <section id="resume" class="section" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>View or download my resume below:</p>
+    <a class="button" href="Akhilesh_Narotra_Resume.pdf" download>Download Resume (PDF)</a>
+  </section>
 
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <form action="https://formspree.io/f/xgegrzkn" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="button">Send Message</button>
-      </form>
-    </section>
-  </main>
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>If you'd like to discuss a project or just say hello, feel free to reach out!</p>
+    <form action="https://formspree.io/f/xgegrzkn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <br><br>
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
 
   <footer data-aos="fade-up">
-    <p>© 2025 Akhilesh Narotra | All Rights Reserved</p>
+    <p>© 2025 Akhilesh Narotra</p>
     <p>
       <a href="https://github.com/min-ti" target="_blank">GitHub</a> |
       <a href="mailto:arnsurecan@gmail.com">Email</a> |
@@ -75,10 +160,7 @@
   </footer>
 
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    AOS.init({ duration: 1000, once: true });
   </script>
 </body>
 </html>
