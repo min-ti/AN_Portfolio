@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Akhilesh Narotra</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .projects-container {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: #1a1a1a;
+      border: 1px solid #2c2c2c;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 255, 170, 0.2);
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      color: #39ff14;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-description {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="projects-container">
+    <div class="project-card">
+      <div class="project-title">Energy Audit – Viscount Alexander Public School</div>
+      <div class="project-description">
+        Conducted an energy audit using RETScreen, identifying 10.9% annual energy savings. Proposed HVAC and lighting upgrades, reducing operating costs by 21.6% and GHG emissions by 8.7%. Payback in 4.4 years with 54.3% IRR.
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Solar + Battery Project – Isla Mocha, Chile</div>
+      <div class="project-description">
+        Designed a 50 kW solar PV + lithium-ion battery system to reduce diesel dependency. Site analysis, financial modeling, and stakeholder engagement led to a 7.2-year payback solution.
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Banking Web App QA – Selenium + JIRA</div>
+      <div class="project-description">
+        Executed test cases, identified 40+ critical defects in a banking platform. Used Selenium for automation and JIRA for reporting. Improved product reliability and delivery timelines.
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
