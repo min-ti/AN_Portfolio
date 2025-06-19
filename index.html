@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags -->
-    <title>Akhilesh Narotra - Portfolio</title>
-    <style>
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .interactive-desktop {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background: url('desktop-bg.jpg') center/cover;
-        }
-        .desktop-icon {
-            position: absolute;
-            width: 60px;
-            transition: transform 0.3s ease;
-        }
-        /* Add cursor-following face like your current implementation */
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhilesh Narotra | Energy Engineer & UX Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <header>
+    <div class="cursor-trailer"></div>
+    
+    <header class="glass-nav">
         <nav>
-            <a href="work.html">Work</a>
-            <a href="about.html">About</a>
-            <a href="play.html">Play</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero-container">
-            <div class="hero-text">
-                <h1>Designing through <span class="highlight">a different lens</span></h1>
-                <p>Energy engineer turned product designer creating human-centered solutions</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Bridging</span>
+                    <span class="title-line">Engineering</span>
+                    <span class="title-line">& Design</span>
+                </h1>
+                <p class="hero-subtitle">Creating sustainable solutions through technical precision and human-centered design</p>
+                <a href="work.html" class="cta-button">View Projects →</a>
             </div>
-            <div class="interactive-desktop">
-                <!-- Interactive elements that respond to cursor -->
-                <img src="face.png" class="cursor-face" alt="Akhilesh Narotra">
-                <img src="project-icon.png" class="desktop-icon" style="top:20%; left:30%">
+            
+            <div class="hero-visual">
+                <div class="interactive-face">
+                    <img src="assets/images/face.png" alt="Akhilesh Narotra" id="face">
+                </div>
+                <div class="floating-icons">
+                    <img src="assets/images/energy-icon.png" class="floating-icon" style="--delay:0.1s">
+                    <img src="assets/images/ux-icon.png" class="floating-icon" style="--delay:0.3s">
+                    <img src="assets/images/tech-icon.png" class="floating-icon" style="--delay:0.5s">
+                </div>
+            </div>
+        </section>
+
+        <section class="marquee">
+            <div class="marquee-content">
+                <span>Energy Efficiency</span>
+                <span>UX Design</span>
+                <span>Sustainable Systems</span>
+                <span>Product Testing</span>
+                <span>Human-Centered Design</span>
             </div>
         </section>
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
