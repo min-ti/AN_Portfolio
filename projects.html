@@ -1,34 +1,79 @@
-<section class="case-study">
-    <div class="case-study-header">
-        <span class="category">UX Research</span>
-        <h2>Facebook Ads Manager Onboarding</h2>
-        <p>Reducing cognitive load in scheduling workflows</p>
-    </div>
-    
-    <div class="case-study-content">
-        <div class="project-meta">
-            <div>
-                <h4>Role</h4>
-                <p>Lead Designer</p>
-            </div>
-            <div>
-                <h4>Duration</h4>
-                <p>3 months</p>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Akhilesh Narotra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work.html" class="nav-link active">Work</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="projects-container">
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="energy">Energy</button>
+            <button class="filter-btn" data-filter="ux">UX Design</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
         </div>
-        
-        <div class="project-gallery">
-            <!-- Before/After sliders or image carousels -->
-            <img src="ads-manager-before.jpg" alt="Original interface">
-            <img src="ads-manager-after.jpg" alt="Redesigned interface">
+
+        <div class="projects-grid">
+            <!-- Energy Audit Project -->
+            <article class="project-card energy" data-project="energy-audit">
+                <div class="project-image">
+                    <img src="assets/images/energy-audit.jpg" alt="School Energy Audit">
+                    <div class="project-tags">
+                        <span>RETScreen</span>
+                        <span>Energy Modeling</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Viscount Alexander Public School Energy Audit</h3>
+                    <p>Identified 10.9% annual energy savings through HVAC and lighting upgrades with 4.4-year payback</p>
+                    <a href="#" class="project-link">View Case Study →</a>
+                </div>
+            </article>
+
+            <!-- Solar Project -->
+            <article class="project-card energy" data-project="solar">
+                <div class="project-image">
+                    <img src="assets/images/solar-project.jpg" alt="Solar Battery System">
+                    <div class="project-tags">
+                        <span>Solar PV</span>
+                        <span>Battery Storage</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Isla Mocha Solar + Battery System</h3>
+                    <p>50 kW solar PV system with lithium-ion storage reducing diesel dependency (7.2-year payback)</p>
+                    <a href="#" class="project-link">View Case Study →</a>
+                </div>
+            </article>
+
+            <!-- UX Redesign Project -->
+            <article class="project-card ux" data-project="ux-redesign">
+                <div class="project-image">
+                    <img src="assets/images/ux-redesign.jpg" alt="Student Portal Redesign">
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>WCAG</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Student Portal UX Redesign</h3>
+                    <p>Improved navigation and accessibility resulting in 30% faster task completion</p>
+                    <a href="#" class="project-link">View Case Study →</a>
+                </div>
+            </article>
         </div>
-        
-        <div class="project-details">
-            <h3>The Challenge</h3>
-            <p>New users struggled with complex scheduling workflows...</p>
-            
-            <h3>Solution</h3>
-            <p>Simplified UI patterns and progressive disclosure...</p>
-        </div>
-    </div>
-</section>
+    </main>
+
+    <script src="js/projects.js"></script>
+</body>
+</html>
