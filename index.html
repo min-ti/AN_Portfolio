@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Akhilesh Narotra</title>
-  <link rel="stylesheet" href="style.css"/>
+    <!-- Meta tags -->
+    <title>Akhilesh Narotra - Portfolio</title>
+    <style>
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .interactive-desktop {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url('desktop-bg.jpg') center/cover;
+        }
+        .desktop-icon {
+            position: absolute;
+            width: 60px;
+            transition: transform 0.3s ease;
+        }
+        /* Add cursor-following face like your current implementation */
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="play.html">Play</a>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <nav>
-      <a href="#">Work</a>
-      <a href="#">About</a>
-      <a href="#">Play</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="character-scene">
-      <img src="scene.png" id="face" alt="character" />
-    </div>
-    <h1>Akhilesh Narotra</h1>
-    <p>Designing through a different lens.</p>
-    <button id="view-work-btn">View My Work →</button>
-  </section>
-
-  <script src="script.js"></script>
+    <main>
+        <section class="hero-container">
+            <div class="hero-text">
+                <h1>Designing through <span class="highlight">a different lens</span></h1>
+                <p>Energy engineer turned product designer creating human-centered solutions</p>
+            </div>
+            <div class="interactive-desktop">
+                <!-- Interactive elements that respond to cursor -->
+                <img src="face.png" class="cursor-face" alt="Akhilesh Narotra">
+                <img src="project-icon.png" class="desktop-icon" style="top:20%; left:30%">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
