@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhilesh Narotra | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akhilesh Narotra</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="cursor-trailer"></div>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#">Work</a>
+      <a href="#">About</a>
+      <a href="#">Play</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="character-scene">
+      <img src="scene.png" id="face" alt="character" />
+    </div>
+    <h1>Akhilesh Narotra</h1>
+    <p>Designing through a different lens.</p>
     
-    <header class="glass-nav">
-        <nav>
-            <a href="work.html" class="nav-link">Work</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-    </header>
+    <!-- Interactive Number Grid -->
+    <div class="number-grid">
+      <div class="number-item">1</div>
+      <div class="number-item">2</div>
+      <div class="number-item">3</div>
+      <div class="number-item">4</div>
+      <div class="number-item">5</div>
+      <div class="number-item">6</div>
+      <div class="number-item">7</div>
+      <div class="number-item">8</div>
+      <div class="number-item">9</div>
+      <div class="number-item">10</div>
+      <div class="number-item">11</div>
+      <div class="number-item">12</div>
+      <div class="number-item">13</div>
+      <div class="number-item">14</div>
+    </div>
+    
+    <button id="view-work-btn">View My Work →</button>
+  </section>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-line">Bridging</span>
-                    <span class="title-line">Engineering</span>
-                    <span class="title-line">& Design</span>
-                </h1>
-                <p class="hero-subtitle">Creating sustainable solutions through technical precision and human-centered design</p>
-                <a href="work.html" class="cta-button">View Projects →</a>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="interactive-face">
-                    <img src="assets/images/face.png" alt="Akhilesh Narotra" id="face">
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
